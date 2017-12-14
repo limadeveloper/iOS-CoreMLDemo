@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSCoreMLDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="hIa-HS-hvI">
+                                <rect key="frame" x="29" y="74" width="100" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xDe-aV-gcT" appends="YES" id="Oji-1T-hLe"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="nfA-et-6hU">
+                                <rect key="frame" x="137" y="74" width="100" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zb9-ni-yHP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XvR-an-4Ak" appends="YES" id="vnb-3g-FKg"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03" translatesAutoresizingMaskIntoConstraints="NO" id="lmV-go-F90">
+                                <rect key="frame" x="245" y="74" width="100" height="128"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8Qw-0t-CLb" appends="YES" id="XP1-hX-VsJ"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-Up-A2J">
+                                <rect key="frame" x="20" y="246" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hIa-HS-hvI" firstAttribute="centerY" secondItem="nfA-et-6hU" secondAttribute="centerY" id="0qq-h9-k9B"/>
+                            <constraint firstItem="lmV-go-F90" firstAttribute="height" secondItem="nfA-et-6hU" secondAttribute="height" id="1sX-Mc-Wxo"/>
+                            <constraint firstItem="lmV-go-F90" firstAttribute="centerY" secondItem="nfA-et-6hU" secondAttribute="centerY" id="4jr-X8-DsA"/>
+                            <constraint firstItem="Zlm-Up-A2J" firstAttribute="top" secondItem="nfA-et-6hU" secondAttribute="bottom" constant="44" id="5XZ-h0-eWl"/>
+                            <constraint firstItem="Zlm-Up-A2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K4n-RQ-QPO"/>
+                            <constraint firstItem="nfA-et-6hU" firstAttribute="leading" secondItem="hIa-HS-hvI" secondAttribute="trailing" constant="8" id="MG2-vQ-DjR"/>
+                            <constraint firstItem="hIa-HS-hvI" firstAttribute="width" secondItem="nfA-et-6hU" secondAttribute="width" id="YQU-2Y-fgU"/>
+                            <constraint firstItem="lmV-go-F90" firstAttribute="width" secondItem="nfA-et-6hU" secondAttribute="width" id="YR6-Gg-ZWu"/>
+                            <constraint firstItem="lmV-go-F90" firstAttribute="leading" secondItem="nfA-et-6hU" secondAttribute="trailing" constant="8" id="bhC-M8-JAa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="nfA-et-6hU" secondAttribute="bottom" constant="-158" id="cqP-Mk-Lod"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zlm-Up-A2J" secondAttribute="trailing" constant="20" id="gAc-uk-VPf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lmV-go-F90" secondAttribute="trailing" constant="30" id="sJ3-Cn-pyQ"/>
+                            <constraint firstItem="hIa-HS-hvI" firstAttribute="height" secondItem="nfA-et-6hU" secondAttribute="height" id="sdk-iC-1wg"/>
+                            <constraint firstItem="hIa-HS-hvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="zzp-wV-nmo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="Zlm-Up-A2J" id="VRh-DX-7jo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xDe-aV-gcT">
+                    <connections>
+                        <action selector="selectImageWithSender:" destination="BYZ-38-t0r" id="ltl-jk-agN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XvR-an-4Ak">
+                    <connections>
+                        <action selector="selectImageWithSender:" destination="BYZ-38-t0r" id="Qm4-fT-V8V"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8Qw-0t-CLb">
+                    <connections>
+                        <action selector="selectImageWithSender:" destination="BYZ-38-t0r" id="7A9-6K-1ew"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01" width="224" height="224"/>
+        <image name="02" width="224" height="224"/>
+        <image name="03" width="224" height="224"/>
+    </resources>
+</document>
